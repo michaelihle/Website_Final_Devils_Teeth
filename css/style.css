@@ -1,0 +1,431 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html{
+	height: 100%;
+}
+
+body{
+	width: 100%;
+	margin: 0 auto;
+	background-color: #FFFFFF;
+}
+
+
+footer {
+	font-family: Proxima Nova;
+	color: white;
+    float: left;
+    width: 100%;
+    background-color: #24649A;
+    text-align: center;
+    font-size: 12.5pt;
+    box-sizing: border-box;
+}
+
+#footernav {
+	position: fixed;
+	top: 0;
+	z-index: 100;
+	padding: 5px;
+	margin: 0 auto;
+}
+
+
+#logo {
+	font-family: Didot;
+	line-height: 5pt;
+	font-size: 19.5pt;
+	color: #24649A;
+	padding-bottom: 10px;
+}
+
+@media screen and (max-width: 600px){
+	#logo {
+		float: none;
+		display: inline-block;
+		padding-left: 10px; 
+	}
+}
+
+@media screen and (max-width: 785px){
+	#logo {
+		float: none;
+		display: inline-block;
+		padding-left: 10px; 
+	}
+}
+
+
+
+.mainNav {
+	display: inline-block;
+	background-color: #FFFFFF;
+	width: 100%;
+	position: static;
+	top: 0;
+	z-index: 100;
+	text-align: center;
+	padding-bottom: 12px;
+	margin: 0 auto;
+}
+
+.mainNav a {
+	font-family: Proxima Nova;
+	padding: 30px;
+	margin: 20px;
+	color: #282B38;
+	text-align: center;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.mainNav .icon {
+				display: none;
+			}
+
+
+a:hover {
+	color: grey;
+}
+
+
+@media screen and (max-width: 600px) {
+				.mainNav a {
+					display: none;
+				}
+				.mainNav a.icon{
+					float: right;
+					display: block;
+				}
+
+}
+
+@media screen and (max-width: 600px){
+				.mainNav.responsive {position: relative;}
+				.mainNav.responsive .icon {
+					position: absolute;
+					right: 0;
+					top: 0;
+				}
+
+				.mainNav.responsive a {
+					float: none;
+					display: block;
+					text-align: center;
+
+				}
+}
+
+@media screen and (max-width: 785px) {
+				.mainNav a {
+					display: none;
+					padding: 20px;
+
+
+				}
+				.mainNav a.icon{
+					float: right;
+					display: block;
+				}
+
+}
+
+@media screen and (max-width: 785px){
+				.mainNav.responsive {position: relative;}
+				.mainNav.responsive .icon {
+					position: absolute;
+					right: 0;
+					top: 0;
+				}
+
+				.mainNav.responsive a {
+					float: none;
+					display: block;
+					text-align: center;
+
+				}
+}
+
+section{
+	background-color: white;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+  position: relative;
+  opacity: 0.85;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bgimg-1{
+background-image: url("../images/o-2.jpg");
+min-height: 400px;
+}
+
+.bgimg-2{
+background-image: url("../images/DMuffin.jpg");
+min-height: 400px;	
+}
+
+.bgimg-3{
+background-image: url("../images/cappucino.jpg");
+min-height: 400px;	
+}
+
+.bgimg-4{
+	background-image: url("../images/kaffee-meister-760540-unsplash.jpg");
+	min-height: 400px;
+}
+
+@media screen and (max-width: 785px) {
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+		background-attachment: scroll;			
+	}
+}
+.pic img {
+     	position: relative;
+  		opacity: 0.85; /* This is just for style. Feel free to delete. */
+  		background-position: center;
+ 		background-size: cover;
+  		background-attachment: fixed;
+  		width: 100%;
+        vertical-align: middle;
+      }
+
+@media screen and (max-width: 698px) {
+        .pic img {
+          flex: 100%;
+          max-width: 100%;
+        }
+}
+
+#left {
+	width: 50%;
+    float: left;
+    text-align: justify;
+    font-family: didot;
+    color: black;
+}
+
+#right{
+	width: 50%;
+    float: left;
+    text-align: justify;
+    font-family: didot;
+    color: black;
+}
+  
+
+h2{
+	margin: 10px 0 0 10px;
+	text-align: center;
+	font-size: 30px;
+	font-family: didot;	
+	margin-top: 20px;
+}
+
+.left {
+	font-size: 15px;
+	padding: 10px;
+	margin-left: 20px;
+	color: #24649A;
+}
+
+.right {
+	font-size: 15px;
+	padding: 10px;
+	margin-left: 10px;
+	color: #FFFEF0;
+	float: center;
+	margin-right: 2%;
+	color: #24649A;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+iframe{
+	padding: 10px;
+}
+
+.about{
+	background-color: white;
+	color: #24649A;
+}
+
+h3{
+	font-size: 30px;
+	font-family: didot;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	color: black;
+}
+.about p {
+	font-family: Bodoni;
+	font-size: 20px;
+	padding: 2%;
+	padding-left: 20%;
+	padding-right: 20%;
+	text-align: justify;
+	padding-top: 0%;
+	padding-bottom: 5%;
+	margin-top: 10px;
+	color: #24649A;
+}
+
+#sandwiches, #hotdrinks, #bakery, #colddrinks {
+	text-align: center;
+	font-family: Didot;
+	line-height: 150%;
+	font-size: 17pt;
+	color: #282B38;
+	padding-top: 10px;
+}
+
+#location {
+	text-align: left;
+	font-family: Didot;
+	line-height: 150%;
+	font-size: 17pt;
+	color: #282B38;
+	padding-bottom: 10px;
+}
+
+
+iframe{
+	background-image: cover;
+}
+
+.items {
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 23px;
+	color: #24649A;
+	text-align: left;
+	font-family: Proxima Nova, bold;
+	padding-left: 20%;
+	position: relative;
+}
+
+.items2 {
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 23px;
+	color: #24649A;
+	text-align: left;
+	font-family: Proxima Nova, bold;
+	position: relative;
+}
+
+@media screen and (max-width: 600px) {
+  .items {
+    flex-direction: column;
+    display: flex;
+	flex-wrap: wrap;
+	font-size: 23px;
+	color: #24649A;
+	text-align: justify;
+	font-family: Proxima Nova, bold;
+	margin-right: 1%;
+	padding: 5px;
+	padding-left: 20%;
+  }
+
+  .column1, .column2 {
+	flex: 20%;
+  	padding: 5px;
+	}
+
+}
+
+	.column3{
+		flex: 20%;
+		padding: 5px;
+		float: right;
+		width: 100%;
+}
+
+.right p{
+	margin: 0px;
+	text-align: center;
+
+}
+
+@media screen and (max-width: 800px) {
+  .items {
+    display: flex;
+	flex-wrap: wrap;
+	font-size: 23px;
+	color: #24649A;
+	text-align: left;
+	font-family: Proxima Nova, bold;
+	padding-left: 20%;
+	flex-direction: column;
+  }
+
+  .column1, .column2 {
+	flex: 20%;
+  	padding: 5px;
+	}
+
+}
+
+
+.column1, .column2 {
+	flex: 20%;
+  	padding: 5px;
+}
+
+
+.left {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 5px;
+    }
+
+    .column {
+      flex: 25%;
+      max-width: 25%;
+      padding: 5px;
+      font-size: 15px;
+	padding: 10px;
+	;
+	color: #FFFEF0;
+	float: center;
+	
+	color: #24649A;
+
+    }
+
+    @media screen and (max-width: 785px) {
+      .column {
+        flex: 100%;
+        max-width: 100%; 
+      }
+    }
+
+.socialicons {
+	text-align: center;
+	padding: 5px;
+}
+
+.socialicons li {
+	display: inline-block;
+	list-style-type: none;
+	text-align: center;
+	-webkit-user-select: none;
+  	-moz-user-select: none;
+}
+
+.socialicons li a {
+  text-decoration: none;
+  }
+
+.socialicons li img {
+  width: 90px;
+  height: 70px;
+  margin-right: 20px;
+}
